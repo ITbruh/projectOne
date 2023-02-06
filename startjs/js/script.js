@@ -39,3 +39,26 @@ console.log(arr[2])
 let Name = 'Fed';
 
 alert(`Hi, ${Name}`)
+
+let num = 50;
+
+switch (num) {
+    case 49:
+        console.log("kipa");
+        break;
+
+};
+
+while (num < 55) {
+    console.log(num)
+    num++;
+};
+
+for (let i = 1; i < 8; i++) {
+    if (i === 6) {
+        console.log('xarosh')
+        break;
+    }
+
+    console.log(i)
+};

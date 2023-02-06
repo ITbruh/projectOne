@@ -8,11 +8,23 @@ const personalMovieDB = {
     privat: false
 };
 
-const quest = prompt("один из ф", ""),
-      b = prompt('оценка', '');
+// const a = prompt('один из ф', ''),
+//       b = prompt('оценка', '');
 
-personalMovieDB.movies[quest] = b;
+for (let i = 0; i < 2; i++) {
+    const a = prompt('один из ф', ''),
+          b = prompt('оценка', '');
 
-console.log(personalMovieDB.movies)
+          if (a != null && b != null && a.length < 50 && a != '' && b != '') {
+            personalMovieDB.movies[a] = b;
+            console.log('doneee');
+          } else { 
+            console.log('error');
+            i--;
+          }
+}
+
+console.log(personalMovieDB.movies);
+
 
 
